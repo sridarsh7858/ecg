@@ -1,0 +1,42 @@
+name: neuropulse
+description: "NeuroPulse: ECG-based stress level estimation with gamified biofeedback."
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management. Kept deliberately simple: ChangeNotifier + Provider.
+  provider: ^6.1.2
+
+  # Local persistence for profile, settings, history and baseline.
+  shared_preferences: ^2.3.2
+
+  # Password hashing for the local (prototype) auth repository.
+  crypto: ^3.0.5
+
+  # BLE transport for the wearable. Isolated behind BleService - no UI code
+  # imports this package directly, so replacing it is a one-file change.
+  flutter_blue_plus: ^1.35.5
+
+  # Runtime permission requests for Bluetooth and location on Android.
+  permission_handler: ^11.3.1
+
+  cupertino_icons: ^1.0.8
+  tflite_flutter: ^0.12.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    # Placeholder for the trained stress model. See assets/models/README.md.
+    - assets/models/

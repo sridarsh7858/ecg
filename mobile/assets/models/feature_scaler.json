@@ -1,0 +1,28 @@
+{
+  "note": "Already baked into stress_model.tflite. The app passes RAW features and receives a calibrated probability. Provided for the model card and for ESP32 range sanity checks.",
+  "order": [
+    "hr",
+    "meanRR",
+    "rmssd",
+    "sdnn",
+    "pnn50"
+  ],
+  "mean": [
+    80.04992063194922,
+    784.3733712048204,
+    43.71718763550001,
+    59.907542794010546,
+    22.385690734698223
+  ],
+  "std": [
+    18.41754751017072,
+    157.6549404126073,
+    26.428683173406604,
+    28.0232248698633,
+    20.1289699150062
+  ],
+  "platt": {
+    "coef": 4.367110192059304,
+    "intercept": -2.531365229943824
+  }
+}

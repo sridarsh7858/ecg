@@ -1,0 +1,13 @@
+# Flutter build output and caches are ignored by mobile/.gitignore.
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+
+# Training pipeline: large intermediates and generated model artefacts.
+# The dataset itself is never committed.
+training/__pycache__/
+training/windows.csv
+training/artifacts/
+WESAD/

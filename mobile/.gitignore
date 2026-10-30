@@ -1,0 +1,25 @@
+# Build output and tooling caches live under mobile/ and are ignored there.
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+
+# Flutter/Dart build output and tooling caches.
+.dart_tool/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+*.iml
+/android/.gradle/
+/android/local.properties
+/android/app/debug
+/android/app/profile
+/android/app/release
+/ios/Flutter/Generated.xcconfig
+/ios/Flutter/flutter_export_environment.sh
+/ios/Pods/
+
